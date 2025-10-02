@@ -1,8 +1,8 @@
 # FILE NAME - grade_converter.py
 
-# NAME: 
-# DATE: 
-# BRIEF DESCRIPTION:  
+# NAME: Antonio Santiago
+# DATE: 10/1/2025
+# BRIEF DESCRIPTION: Program that converts user number grade into a letter grade
 
 
 
@@ -15,22 +15,34 @@
 
 ########## ENTER YER CODE BELOW THIS LINE ##########
 
-print('===== Grade Converter =====')
+def main():
+    convert_grade()
 
-percent = int(input('Enter a numerical grade (1-100): '))
+def convert_grade():
+   print('===== Grade Converter =====')
+   num_grade = int(input('Enter a numerical grade (1-100): '))
 
-if percent > 100:
-    print('A+')
-elif percent >= 90:
-    print('A')
-elif percent >= 80:
-    print('B')
-elif percent >= 70:
-    print('C')
-elif percent >= 65:
-    print('D')
-else:
-    print('F')
+   if num_grade > 100:
+      print('A+')
+   elif 90 <= num_grade <= 100:
+      print('A')
+   elif 80 <= num_grade < 90:
+      print('B')     
+   elif 70 <= num_grade < 80:
+      print('C')
+   elif 65 <= num_grade < 70:
+      print('D')
+   else:
+      print('F') 
+
+main()
+
+
+
+
+
+
+
 
 ########### END YER CODE ABOVE THIS LINE ###########
 
@@ -84,7 +96,7 @@ D
 
 1. What is something you would tell a future student to be careful about when
    doing this lab?
-
+Look into using range for this lab instead of using greater than and less than if statements.
 
 
 
